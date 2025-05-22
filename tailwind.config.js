@@ -1,7 +1,14 @@
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'], // 프로젝트의 src 폴더에서 Tailwind가 사용하는 클래스 검색
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}", // 프로젝트에 맞게 경로 수정
+  ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        navy: '#001f3f',
+        gold: '#ffd700',
+      },
+    },
   },
   plugins: [],
 };
